@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ProgrammingLanguages</title>
+    <title>個人アプリ２</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Kosugi+Maru&display=swap&subset=japanese" rel="stylesheet">
   </head>
 
   <body>
+
+    <header class="header">
+      <h1><a href="/"　class="top-page">Railsで作る個人アプリ２</a></h1>
+      <%# <a href="/top"　class="toppage"></a> %>
+      <%# <a href="/ruby"　class="Ruby">Ruby</a> %>
+      <p>TECHCAMP::2020 <a href="https://twitter.com/@NTomomi5" class="twitterLink"><i class="fab fa-twitter" style="color:tomato;"></i></a></p>
+    </header>
+    
+
     <%= yield %>
+
+    <footer>
+      <small>
+      <a href="https://twitter.com/@NTomomi5" class="footer-link"><i class="fab fa-twitter"></i></a>
+        Copyright(C) N-Tomomi ALL RIGHTS RESERVED.
+      <a href="https://twitter.com/@NTomomi5" class="footer-link"><i class="fab fa-twitter"></i></a>
+      </small>
+    </footer> 
+
   </body>
 </html>

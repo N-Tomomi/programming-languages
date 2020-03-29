@@ -13,3 +13,98 @@
  *= require_tree .
  *= require_self
  */
+
+/* 簡易reset CSS */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+/* 簡易reset CSSここまで */
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(25351.png);
+  /* background-image: image-url(25351.png); */
+  background-size: cover;
+  background-color:rgba(255,255,255,0.6);
+  background-blend-mode:lighten;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  font-weight: none;
+  font-family: 'Kosugi Maru', sans-serif;
+  line-height: 100px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.4;
+  text-decoration: underline;
+}
+
+header p {
+  font-family: 'Caveat', cursive;
+  line-height: 100px;
+  padding-left: 40px;
+  font-size: 23px;
+}
+
+footer {
+  /* background-color: lightgray; */
+  text-align: center;
+  height: 40px;
+  font-family: 'Caveat', cursive;
+  font-size: 21px;
+}
+
+.footer-link {
+  cursor: pointer;
+  text-decoration: none;
+  /* color: tomato; */
+  line-height: 40px;
+}
+
+.fab {
+  cursor: pointer;
+  text-decoration: none;
+  color: tomato;
+}
