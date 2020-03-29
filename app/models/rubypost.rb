@@ -1,0 +1,2 @@
+class Rubypost < ApplicationRecord
+end

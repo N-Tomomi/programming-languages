@@ -1,4 +1,21 @@
 <div class="contents">
-  <h1>仮置　Ruby　仮置</h1>
+
+  <div class="ruby-post-info">
+    <h1>仮置　Ruby　実験中　投稿一覧</h1>
+    <p><%= link_to 'Ruby学習記録投稿', ruby_new_path , class: 'Ruby-post-btn'%></p>
+  </div>
+
+  <div class="main posts-index">
+    <% @rubyposts.each do |rubypost| %>
+      <div class="posts-index-item">
+        <%= rubypost.content %>
+        <%= rubypost.created_at %>
+      </div>
+    <% end %>
+  </div>
+
 </div>
+
+
+
 
