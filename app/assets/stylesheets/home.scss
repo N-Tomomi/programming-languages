@@ -58,3 +58,34 @@
   width: 100%;
 }
 
+/* ruby ================================ */
+.posts-index-item {
+  padding: 20px 30px;
+  // background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #98b188;
+}
+
+/* new ================================ */
+.ruby-post-info {
+  display: flex;
+  justify-content: space-between;
+}
+.Ruby-post-btn {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: darkkhaki;
+    text-align: center;
+    // line-height: 250px;
+    text-decoration: none;
+    padding: 7px;
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+  &:hover {
+    opacity: 0.6;
+  }
+}
