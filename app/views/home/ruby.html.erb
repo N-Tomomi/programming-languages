@@ -1,20 +1,25 @@
-<div class="contents">
+<div class="ruby-contents">
 
   <div class="ruby-post-info">
-    <h1>仮置　Ruby　実験中　投稿一覧</h1>
-    <p><%= link_to 'Ruby学習記録投稿', ruby_new_path , class: 'Ruby-post-btn'%></p>
+    <h1>Ruby To Do Lists</h1>
+    <p><%= link_to 'Ruby:投稿する', ruby_new_path , class: 'Ruby-post-btn'%></p>
   </div>
 
   <div class="main posts-index">
     <% @rubyposts.each do |rubypost| %>
       <div class="posts-index-item">
-        <%= rubypost.content %>
-        <%= rubypost.created_at %>
+        <p><%= rubypost.content %></p>
+        <p><%= l rubypost.created_at %></p>
       </div>
     <% end %>
+    <%= paginate(@rubyposts) %>
   </div>
 
 </div>
+
+
+
+
 
 
 
