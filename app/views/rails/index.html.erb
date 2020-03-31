@@ -1,0 +1,24 @@
+<%# <h1>Rails#index</h1>
+<p>Find me in app/views/rails/index.html.erb</p> %>
+
+
+<div class="rails-contents">
+
+  <div class="rails-post-info">
+    <h1>Rails To Do Lists</h1>
+    <p><%= link_to 'Rails:投稿する', rails_new_path , class: 'Rails-post-btn'%></p>
+  </div>
+
+  
+  <div class="main posts-index">
+     <% @railsposts.each do |railspost| %>
+      <div class="posts-index-item">
+        <%= railspost.content %>
+        <p><%= l railspost.created_at %></p>
+      </div>
+    <% end %>
+    <%= paginate(@railsposts) %>
+  </div>
+
+</div>
+
